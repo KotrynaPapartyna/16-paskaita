@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16 paskaita</title>
+</head>
+<style>
+    body {
+        max-width: 1920px;
+        margin: auto;
+    }
+    
+</style>
+<body>
+    <h1>Javascript pirmoji paskaita</h1>
+    <p>Paskaita pradesime Javascrpt pradmenis</p>
+
+    <p class="keiciamas-turinys">cia keiciamas turinys</p>
+
+    <script>
+        "use strict"; //iveda logika - grieztesne tvarka
+
+        // pasirinkom keiciama elementa
+       // document.querySelector (".keiciamas-turinys").innerHTML= "sekimngai pakeistas p elemento tekstas";
+        //console.log (document.querySelector (".keiciamas-turinys").innerHTML);// sekimngai pakeistas p elemento tekstas
+        //document.querySelector (".keiciamas-turinys").innerHTML= "antra karta pasikeis turinys";
+        //console.log (document.querySelector (".keiciamas-turinys").innerHTML);// antra karta pasikeis turinys
+       
+       
+        //console.log ("labas");
+
+        //tiesiai i dizaina
+        //console.log (document.querySelector (".keiciamas-turinys").innerHTML);// antra karta pasikeis turinys
+
+        //1-priskyrimas-pasirenkamas elementas
+        //2- atliekami pakeitimai
+        //3-pakeitimu atvaizdavimas- console.log arba- tieisia i dizaina
+    
+        //kintamieji
+        //kintamasis- vieta kompiuterio atmintyje, kur saugoma informacija
+
+        //var kintamasis //pries kintamasis negali buti . , -
+        //var 1kintamasis- skaicius gali buti
+        
+        var kintamasis1; //kintamojo deklaravimas
+        kintamasis1 = 5; //kintamojo priskyrimas
+        console.log (kintamasis1); //kintamojos isvedimas
+
+        var kintamasis2; 
+        kintamasis2 = "kintamasis saugo teksta"; //kabutes nieko nekeicia ar 'ar "'
+        console.log (kintamasis2); 
+
+        var kintamasis3; 
+        kintamasis3 = 'kintamasis saugo teksta'; 
+        console.log (kintamasis3);
+
+        var kintamasis4 = "Knyga 'gera knyga'"; 
+        var kintamasis5 = 'Knyga "gera knyga"';
+
+        console.log (kintamasis4);
+        console.log (kintamasis5);
+
+        var kintamasis6;
+        kintamasis6= 5.5;
+        console.log (kintamasis6);
+
+        //tiesa, melas
+        var tiesa;
+        tiesa=true;
+        var melas;
+        melas=false;
+
+        console.log(tiesa);
+        console.log(melas);
+
+        //isvesti dvieju skaitmenu suma
+
+        //2 kintamieji= a.b. suma isvesti-suma. console.log. 
+
+        var a, b, suma; //kintamasis- a, kintamasis- b
+        a=10;
+
+        b=7;
+
+        //a=0 //pakeitus reiksme- fiksuoja paskutini skaiciu
+        //b=a // gali buti vienas kintamasis lygus kitam
+
+        suma=a+b; //kintamuju suma
+
+        a=0 //jeigu kintamojo reiksme pakeiciama po veiksmo- fiksuojama kintamasis pries formule
+        console.log("dvieju skaitmenu suma")
+        console.log(suma);
+
+        //dvieju skaitmenu skirtumas
+        var skirtumas, sk1, sk2;
+        sk1= 15;
+        sk2= 5;
+        skirtumas = sk1-sk2;
+        console.log ("dvieju skaitmenu skirtumas")
+        console.log (skirtumas);
+
+        //dauginti
+        var daugyba;
+        daugyba= sk1 * sk2;
+        console.log ("dvieju skaiciu sandauga");
+        console.log (daugyba);
+
+        //dalyba
+        var dalybosrezultatas;
+        sk1=16;
+        sk2=5;
+        //dalybosrezultatas= sk1/sk2; gaunama reiksme- su kableliu po sveikojo skaiciaus//
+        dalybosrezultatas= parseInt (sk1/sk2); // parseInt- komanda- kad paimtu sveika dali 
+        console.log ("dvieju skaitmenu rezultatas");
+        console.log (dalybosrezultatas);
+        // jeigu klaida padaroma pavadinimuose (net ir anksciau- is kur imamos reiksmes)- inspect metama klaida
+        // php butu lygiai 3, skaiciai po kablelio neimami (tik sveikieji skaiciai)
+
+        //dalyba (liekanos gavimas)
+
+        var liekana;
+        liekana= sk1%sk2; //%- reiskia, kad gausime liekana- 16%5=1
+        console.log ("dvieju skaitmenu dalybos kiekana");
+        console.log (liekana);
+
+        var k1, k2, k3, k4; 
+        k1=55;
+        k2=88;
+        k3=28;
+        k4=5638379;
+
+
+        var l1, l2, l3, l4; 
+        l1=k1%2; // liekana 0- skaicius- lyginis
+        l2=k2%2; //liekana 1- skaicius nelyginis 
+        l3=k3%2;
+        l4=k4%2;
+
+        //kelimas laipsniu
+        var kelimas;
+        kelimas= sk1**5;
+        //kelimas= Math.pow(sk1,5); - kitoks budas. 
+        console.log("skaitmens kelimas laipsniu 5");
+        console.log (kelimas);
+
+        //saknies traukimas is 2
+        var saknis;
+        // saknis=kelimas ** (1/2);
+        saknis=Math.sqrt(kelimas);
+        console.log("saknies traukimas");
+        console.log (saknis);
+
+
+        //atemimas ir pridejimas elementtui po vieneta
+
+        var i=1024;
+        i++;
+
+        console.log(i); //1025
+
+        i--;
+        console.log(i); //1024
+
+
+        var naujaSuma;
+        naujaSuma= 5+4*9; // skaiciuojama is eiles- ne pagal matematika 
+        console.log ("suma ir daugyba");
+        console.log (naujaSuma);
+
+        var rez;
+        rez= 5/4*3; //skaiciuojama is eiles. jeigu norima reiksmiu prioritetas- reikia apskliausti ( pvz 5/ (4*3))
+        console.log ("rez");
+        console.log (rez);
+
+        //saknis traukiama is neigiamo skaiciaus
+        var saknisN= Math.sqrt (-8);
+
+
+        //dalyba is nulio
+        var dalybaN= 8/0;
+
+        console.log (saknisN);
+        console.log (dalybaN);
+
+
+        //kelimas 0
+        var rez0;
+        rez0= 200**0;
+
+        console.log ("skaiciaus pakelimas 0 laipsniu") // bet koki skaiciu paemus ir keliant 0- gaunasi 0
+        console.log (rez0);
+
+        //teksto sudetis su skaiciumi
+
+        var tekstas = "as esu raides ir zodziai"
+        var skaicius1= -5;
+
+        var duKintamieji = tekstas + skaicius1; 
+        var duKintamieji = tekstas - skaicius1; // dalyboje rodo, kad neranda reiksmes
+
+        console.log ("kas gausis")
+        console.log (duKintamieji)
+
+    </script>
+    
+</body>
+</html>
